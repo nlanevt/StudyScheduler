@@ -1,0 +1,2 @@
+# StudyScheduler
+The Study-Scheduler takes a list of books and chapters, then schedules a desired number of chapters in a quadratic interval. In other words, if a new chapter is selected to study, this chapter will reoccur less and less frequently as the weeks go on. This follows the methodology that the more times a subject's content is studied, the less frequent the intervals that it needs re-review.
