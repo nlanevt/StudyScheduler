@@ -42,22 +42,4 @@ public class Chapter {
 		return date_first_studied;
 	}
 	
-	/*
-	 * interval chart
-	 * 	t|formula|i
-	 * 	0|2(0)+1 |1
-	 *  1|2(1)+1 |3
-	 *  2|2(2)+1 |5
-	 *  3|2(3)+1 |7
-	 *  ...
-	 *  interval = 2*(times_studied)+1
-	 *  Due Date = last_date_studied + interval (weeks)
-	 */
-	/*private long getInterval() {
-		long weeks_difference = date_first_studied == null ? 0 : ChronoUnit.WEEKS.between((Temporal) date_first_studied, LocalDate.now());
-		
-		//return (2*times_studied) + 1;
-		return 0;
-	}*/
-	
 }

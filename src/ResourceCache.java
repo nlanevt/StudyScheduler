@@ -82,7 +82,7 @@ public class ResourceCache {
 	}
 	
 	//Data Structures and Algorithms in Java;Lafore;15;0,6,6,5,5,5,5,5,0,5,5,5,5,5,0;T;CS;
-	//Format: [chapter_number|date_first_studied|isActive|(problems)]
+	//Format: [chapter_number|date_first_studied|isActive]
 	public void saveResources() {
 		
 		if (!this.isDateReadyToSave()) {
