@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.ArrayList;
@@ -151,7 +150,6 @@ public class ProblemsCreator {
 			for (Chapter chapter : due_chapters) {
 				String partition_name = chapter.getChapterNumber().contains(".") ? "Section" : "Chapter";
 				result.add("Review " + resource.getTitle() + ", " + partition_name + " " + chapter.getChapterNumber());
-				chapter.SetAsStudied();
 				due_chapter_counter++;
 			}
 		}

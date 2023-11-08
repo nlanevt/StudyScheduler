@@ -30,11 +30,15 @@ public class Chapter {
 	}
 	
 	public void SetAsStudied() {
-		date_first_studied = Utils.GetMostRecentSunday();
+		if (IsUnstudied()) {
+			date_first_studied = Utils.GetMostRecentSunday();
+		}
 	}
 	
 	public boolean isDue() {
-		long diff = date_first_studied == null ? 0 : ChronoUnit.WEEKS.between((Temporal) date_first_studied, Utils.GetMostRecentSunday());
+		if (IsUnstudied()) return false;
+		
+		long diff = ChronoUnit.WEEKS.between((Temporal) date_first_studied, Utils.GetMostRecentSunday());
 		return diff > 1 && Utils.IsPerfectSquare(diff);
 	}
 	
